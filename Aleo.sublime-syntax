@@ -38,7 +38,7 @@ contexts:
       scope: finalize.aleo
 
   qualifiers:
-    - match: '\b()\b'
+    - match: '\(|\)'
       scope: qualifiers.aleo
 
   visibility:
@@ -50,7 +50,7 @@ contexts:
       scope: instruction.aleo
 
   numbers:
-    - match: '\b(-)?[0-9.]+\b'
+    - match: '-?[0-9.]+'
       scope: constant.numeric.aleo
 
   strings:
